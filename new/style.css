@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+   background: linear-gradient(45deg, #020024, #6d097d);
+   color: #f0f0f0;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Container */
+.container {
+   width: 90%;
+   max-width: 700px;
+   background: #282c34;
+   border-radius: 12px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+   padding: 20px 30px;
+   text-align: center;
+}
+
+/* Header */
+header h1 {
+   font-size: 2rem;
+   color: #ff4757;
+   margin-bottom: 10px;
+}
+
+header h1 span {
+   color: #1e90ff;
+}
+
+header p {
+   font-size: 1rem;
+   margin-bottom: 20px;
+}
+
+/* Main Section */
+textarea {
+   width: 100%;
+   height: 120px;
+   border: none;
+   border-radius: 8px;
+   padding: 10px;
+   margin-bottom: 20px;
+   font-size: 1rem;
+   background: #44475a;
+   color: #f0f0f0;
+   resize: none;
+}
+
+textarea::placeholder {
+   color: #aaa;
+}
+
+/* Controls */
+.controls {
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   gap: 10px;
+   margin-bottom: 20px;
+}
+
+.voice-control select {
+   width: 100%;
+   padding: 8px;
+   background: #44475a;
+   border: none;
+   color: #f0f0f0;
+   border-radius: 8px;
+}
+
+.range-controls {
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+}
+
+.range-controls label {
+   font-size: 0.8rem;
+}
+
+.range-controls input {
+   width: 100%;
+}
+
+/* Buttons */
+.actions button {
+   width: 100%;
+   padding: 12px;
+   border: none;
+   font-size: 1rem;
+   border-radius: 8px;
+   cursor: pointer;
+   margin-bottom: 10px;
+   transition: background 0.3s;
+}
+
+#speakButton {
+   background: #1e90ff;
+   color: #fff;
+}
+
+#stopButton {
+   background: #ff4757;
+   color: #fff;
+}
+
+.actions button:hover {
+   opacity: 0.9;
+}
+
+/* Character Count */
+.char-count {
+   margin: 10px 0;
+   font-size: 0.9rem;
+}
+
+/* Status */
+.status {
+   font-size: 0.9rem;
+   color: #aaa;
+}
+
+/* Footer */
+footer button {
+   background: #44475a;
+   color: #f0f0f0;
+   padding: 8px 12px;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   font-size: 0.9rem;
+   margin-top: 10px;
+}
+
+footer button:hover {
+   background: #555b6e;
+}
+
+/* Dark Mode */
+body.dark-mode {
+   background: linear-gradient(45deg, #121212, #444);
+}
+
+body.dark-mode .container {
+   background: #1e1e1e;
+   color: #ddd;
+}

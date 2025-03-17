@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Text <span>To Speech</span></h1>
+            <p>Select a language, choose a voice, and convert text to speech.</p>
+        </header>
+
+        <main>
+            <textarea id="textInput" placeholder="Type your text here..."></textarea>
+
+            <div class="controls">
+                <div class="language-control">
+                    <label for="languageSelect">Language:</label>
+                    <select id="languageSelect"></select>
+                </div>
+                <div class="voice-control">
+                    <label for="voiceSelect">Voice:</label>
+                    <select id="voiceSelect"></select>
+                </div>
+                <div class="range-controls">
+                    <label for="volume">Volume</label>
+                    <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+                    
+                    <label for="pitch">Pitch</label>
+                    <input type="range" id="pitch" min="0" max="2" step="0.1" value="1">
+                    
+                    <label for="rate">Rate</label>
+                    <input type="range" id="rate" min="0.5" max="2" step="0.1" value="1">
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="speakButton">🔊 Speak</button>
+                <button id="stopButton">⏹️ Stop</button>
+            </div>
+
+            <div class="char-count">
+                Characters: <span id="charCount">0</span>/500
+            </div>
+
+            <div class="status" id="status">Status: Ready</div>
+        </main>
+
+        <footer>
+            <button id="toggleTheme">Toggle Dark Mode</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
